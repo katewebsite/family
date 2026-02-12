@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025-2026 年度家庭頒獎典禮</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #f8ad9d;
-            --secondary-color: #fbc4ab;
             --text-color: #5d4037;
-            --bg-color: #fff9f5;
         }
 
         body {
@@ -36,15 +34,6 @@
             position: relative;
             overflow: hidden;
             border: 2px solid #ffffff;
-        }
-
-        .card::before {
-            content: '🐈';
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            font-size: 2rem;
-            opacity: 0.5;
         }
 
         .header {
@@ -75,7 +64,6 @@
             display: block;
             margin: 20px auto;
             border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .recipient {
@@ -89,7 +77,7 @@
         .content {
             text-align: justify;
             font-size: 1.05rem;
-            white-space: pre-wrap; /* 完美保留換行與空白 */
+            white-space: pre-wrap;
         }
 
         .highlight {
@@ -103,52 +91,31 @@
             border-radius: 15px;
             margin: 15px 0;
             border-left: 5px solid #f8ad9d;
-            line-height: 1.6;
         }
 
         .footer {
-            margin-top: 40px;
-            text-align: right;
+            margin-top: 30px;
+            text-align: center; /* 圖片置中 */
             border-top: 1px solid #eee;
             padding-top: 20px;
         }
 
-        .signature {
-            font-family: 'Zhi Mang Xing', cursive;
-            font-size: 1.9rem;
-            color: #d88c7d;
-            margin-bottom: 10px;
-        }
-
-        .emoji-deco {
-            font-size: 1.5rem;
-            display: block;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .trophy {
-            font-size: 3rem;
-            text-align: center;
-            animation: float 3s ease-in-out infinite;
-            margin-bottom: 5px;
+        .footer-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <div class="trophy">🏆</div>
     <div class="header">
         <span class="award-title">2025-2026 年度家庭頒獎典禮</span>
         <h1>【獎項：家庭最佳 MVP 暨神隊友總冠軍】</h1>
     </div>
 
-    <img src="image1.png" alt="家庭最佳 MVP 主視覺" class="main-visual">
+    <img src="image1.png" alt="主視覺" class="main-visual">
 
     <span class="recipient">致 我最親愛的「新莊任達華」：</span>
 
@@ -158,15 +125,14 @@
 
 2025年雖然沒有到處出國比賽和表演，但也是收穫滿滿的一年，音樂劇的磨練除了增進了兒子的唱功之外，最開心的是他交到了朋友，提升了他的表達能力。
 
-<div class="quote-box">納瓦爾說：「量變產生質變，當你只有一個對象的時候，你很容易栽到這人手上，但你有一群朋友的時候，你就成為觀察者。」</div>音樂劇朋友成為多多很好的觀察學習圈，舉凡態度、人品和談吐，都已慢慢潛移默化中了。而音樂劇的各種家長圈小劇場，也是逼我們兩老從「社恐—>社牛—>再回來當社恐」，過程有滋有味，只有我們清楚這意義：<span class="highlight">見山是山，見山又是山。</span>
+<div class="quote-box">納瓦爾說：「量變產生質變，當你只有一個對象的時候，你很容易栽到這人手上，但你有一群朋友的時候，你就成為觀察者。」</div>音樂劇朋友成為多多很好的觀察學習圈，舉凡態度、人品和談吐，都已慢慢潛移默化中了。而音樂劇的各種家長圈小劇場，也是逼我們兩老從「社恐—>社牛—>再回來當社恐」，過程有滋有味，只有我們清楚這意義：<span class="highlight">見山是山，見山不是山，見山又是山。</span>
 
 2026 年，也請「神隊友」多多關照！連兒子都驚訝我們兩個怎麼這麼有默契，那是因為我們有三不五時的深夜談話啊！2026 年我們就把長大的多多拉進來，一起討論納瓦爾智慧、一起規畫家庭進步計畫。
 
 這份紅包是老婆的一點小小心意，請收下這份「家庭最佳 MVP」的專屬壓歲錢！錢不多，但裡面裝滿了對你的崇拜與感謝（還有對大餐的期待）。</div>
 
     <div class="footer">
-        <div class="signature">2026 年，請繼續帶領我們全家開車看風景喔！愛你！</div>
-        <span class="emoji-deco">🚗💨💨 ✨ ❤️</span>
+        <img src="footer_sign.png" alt="愛你簽名" class="footer-image">
     </div>
 </div>
 

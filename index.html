@@ -8,12 +8,14 @@
     <style>
         :root {
             --primary-color: #f8ad9d;
+            --secondary-color: #fbc4ab;
             --text-color: #5d4037;
+            --bg-color: #fff9f5;
         }
 
         body {
             background: linear-gradient(135deg, #fff5f0 0%, #ffede1 100%);
-            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Noto Sans TC', "Microsoft JhengHei", sans-serif;
             color: var(--text-color);
             margin: 0;
             padding: 20px;
@@ -64,6 +66,7 @@
             display: block;
             margin: 20px auto;
             border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .recipient {
@@ -93,17 +96,25 @@
             border-left: 5px solid #f8ad9d;
         }
 
+        /* 尾段文字樣式：放大、粗體、無圖示 */
         .footer {
-            margin-top: 30px;
-            text-align: center; /* 圖片置中 */
+            margin-top: 40px;
+            text-align: center;
             border-top: 1px solid #eee;
-            padding-top: 20px;
+            padding-top: 30px;
         }
 
-        .footer-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .footer-text {
+            font-size: 1.6rem; /* 放大字體 */
+            font-weight: 900;  /* 加粗 */
+            color: #d88c7d;
+            line-height: 1.6;
+        }
+
+        .footer-love {
+            font-size: 2rem;   /* 愛你特別放大 */
+            display: block;    /* 獨立斷行 */
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -115,7 +126,7 @@
         <h1>【獎項：家庭最佳 MVP 暨神隊友總冠軍】</h1>
     </div>
 
-    <img src="image1.png" alt="主視覺" class="main-visual">
+    <img src="image1.png" alt="家庭最佳 MVP 主視覺" class="main-visual">
 
     <span class="recipient">致 我最親愛的「新莊任達華」：</span>
 
@@ -131,8 +142,11 @@
 
 這份紅包是老婆的一點小小心意，請收下這份「家庭最佳 MVP」的專屬壓歲錢！錢不多，但裡面裝滿了對你的崇拜與感謝（還有對大餐的期待）。</div>
 
-  <div class="footer">
-        <img src="footer_sign.png" alt="2026 帶領全家看風景 愛你" class="footer-image" style="max-width: 80%; margin: 0 auto; display: block;">
+    <div class="footer">
+        <div class="footer-text">
+            2026 年，請繼續帶領我們全家開車看風景喔！
+            <strong class="footer-love">愛你！</strong>
+        </div>
     </div>
 </div>
 

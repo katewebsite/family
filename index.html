@@ -27,10 +27,10 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             max-width: 650px;
             width: 100%;
-            padding: 50px;
+            padding: 40px 50px;
             border-radius: 30px;
             box-shadow: 0 15px 35px rgba(248, 173, 157, 0.2);
             position: relative;
@@ -38,60 +38,58 @@
             border: 2px solid #ffffff;
         }
 
-        /* 裝飾用的可愛小圖示 */
         .card::before {
             content: '🐈';
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 25px;
             font-size: 2rem;
-            opacity: 0.6;
+            opacity: 0.5;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .award-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #e76f51;
             font-weight: 700;
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             display: block;
         }
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             margin: 0;
             color: #d88c7d;
             border-bottom: 2px dashed #f8ad9d;
             padding-bottom: 15px;
         }
 
-        /* 主視覺圖片樣式 */
         .main-visual {
             width: 100%;
-            max-width: 500px;
+            max-width: 550px;
             display: block;
             margin: 20px auto;
             border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .recipient {
             font-size: 1.4rem;
             font-weight: 700;
             color: #8d6e63;
-            margin: 20px 0 15px;
+            margin: 25px 0 15px;
             display: block;
         }
 
         .content {
             text-align: justify;
             font-size: 1.05rem;
-            white-space: pre-line; /* 保留換行 */
+            white-space: pre-wrap; /* 完美保留換行與空白 */
         }
 
         .highlight {
@@ -101,11 +99,11 @@
 
         .quote-box {
             background: #fff0eb;
-            padding: 15px 20px;
+            padding: 15px 22px;
             border-radius: 15px;
-            margin: 20px 0;
+            margin: 15px 0;
             border-left: 5px solid #f8ad9d;
-            font-style: italic;
+            line-height: 1.6;
         }
 
         .footer {
@@ -117,17 +115,16 @@
 
         .signature {
             font-family: 'Zhi Mang Xing', cursive;
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             color: #d88c7d;
+            margin-bottom: 10px;
         }
 
         .emoji-deco {
             font-size: 1.5rem;
-            margin-top: 10px;
             display: block;
         }
 
-        /* 動畫效果 */
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -138,7 +135,7 @@
             font-size: 3rem;
             text-align: center;
             animation: float 3s ease-in-out infinite;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -155,12 +152,23 @@
 
     <span class="recipient">致 我最親愛的「新莊任達華」：</span>
 
-    <div class="content">
-        這一年來，看著你支付寶貝兒子的學費、添購裝備，還要扛起那（驚人的）伙食費 XD，真心覺得這個家有你「罩」著，我才能安心當枚快樂的社畜！
+    <div class="content">這一年來，看著你支付寶貝兒子的學費、添購裝備，還要扛起那（驚人的）伙食費 XD，真心覺得這個家有你「罩」著，我才能安心當枚快樂的社畜！
 
-        最佩服的是你接下了「陪伴兒子」這項最重要、最緊急、且無法重來的終極任務。正如你說的：<span class="highlight">「兒子品質好，全家沒煩惱！」</span>如果孩子狀況層出不窮（刷視頻、打遊戲、動不動就情緒噴發），家就像一台「漏油的汽車」，我們忙著補洞就疲於奔命了，哪還有心情開車去看風景？謝謝你把油箱補得這麼滿、這麼穩，讓我們家這台車不僅不漏油，還能開出豪華超跑的質感。
+最佩服的是你接下了「陪伴兒子」這項最重要、最緊急、且無法重來的終極任務。正如你說的：<span class="highlight">「兒子品質好，全家沒煩惱！」</span>如果孩子狀況層出不窮（刷視頻、打遊戲、動不動就情緒噴發），家就像一台「漏油的汽車」，我們忙著補洞就疲於奔命了，哪還有心情開車去看風景？謝謝你把油箱補得這麼滿、這麼穩，讓我們家這台車不僅不漏油，還能開出豪華超跑的質感。
 
-        2025年雖然沒有到處出國比賽和表演，但也是收穫滿滿的一年，音樂劇的磨練除了增進了兒子的唱功之外，最開心的是他交到了朋友，提升了他的表達能力。
+2025年雖然沒有到處出國比賽和表演，但也是收穫滿滿的一年，音樂劇的磨練除了增進了兒子的唱功之外，最開心的是他交到了朋友，提升了他的表達能力。
 
-        <div class="quote-box">
-            納瓦爾說：「量變產生質變，當你只有一個對象的時候，你很容易栽到這人手上，但你有一
+<div class="quote-box">納瓦爾說：「量變產生質變，當你只有一個對象的時候，你很容易栽到這人手上，但你有一群朋友的時候，你就成為觀察者。」</div>音樂劇朋友成為多多很好的觀察學習圈，舉凡態度、人品和談吐，都已慢慢潛移默化中了。而音樂劇的各種家長圈小劇場，也是逼我們兩老從「社恐—>社牛—>再回來當社恐」，過程有滋有味，只有我們清楚這意義：<span class="highlight">見山是山，見山又是山。</span>
+
+2026 年，也請「神隊友」多多關照！連兒子都驚訝我們兩個怎麼這麼有默契，那是因為我們有三不五時的深夜談話啊！2026 年我們就把長大的多多拉進來，一起討論納瓦爾智慧、一起規畫家庭進步計畫。
+
+這份紅包是老婆的一點小小心意，請收下這份「家庭最佳 MVP」的專屬壓歲錢！錢不多，但裡面裝滿了對你的崇拜與感謝（還有對大餐的期待）。</div>
+
+    <div class="footer">
+        <div class="signature">2026 年，請繼續帶領我們全家開車看風景喔！愛你！</div>
+        <span class="emoji-deco">🚗💨💨 ✨ ❤️</span>
+    </div>
+</div>
+
+</body>
+</html>
